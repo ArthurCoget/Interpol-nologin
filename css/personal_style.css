@@ -1,0 +1,229 @@
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        body {
+            background-color: #241f21;
+        }
+        
+        .watermark {
+            position: fixed;
+            opacity: .1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .head_image {
+            max-width: 45%;
+            max-height: 45%;
+            top: 50%;
+            left: 50%;
+            overflow: visible;
+        }
+        
+        img.logo {
+            margin-bottom: -45px;
+            margin-top: -15px;
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: -50%;
+        }
+        
+        .text,
+        .text h1 {
+            font-family: 'Special Elite';
+            font-weight: 900;
+            text-align: center;
+        }
+        
+        .text h1 {
+            padding-top: 1.5em;
+            line-height: normal;
+        }
+        
+        .text p {
+            font-size: larger;
+        }
+        
+        .centered-y {
+            font-family: 'Special Elite';
+        }
+        
+        .centered-y h2 {
+            font-family: 'Special Elite';
+            color: #57B1DE;
+            font-weight: 900;
+        }
+        
+        .linkWebPage {
+            text-decoration: underline dotted;
+            font-family: 'Special Elite';
+            color: #57B1DE;
+        }
+        
+        a {
+            transition: color 0.25s ease-in-out;
+            text-transform: uppercase;
+        }
+        
+        a.linkWebPage:hover {
+            color: #b31240;
+        }
+        
+        #Richardson {
+            border: 5px solid #cc3300;
+            top: 32%;
+            left: 46%
+        }
+        
+        #Richardson h2 {
+            color: #cc3300;
+        }
+        
+        #newZealand {
+            top: 85.5%;
+            left: 93%
+        }
+        
+        #japan {
+            top: 42%;
+            left: 84%
+        }
+        
+        #italy {
+            top: 41%;
+            left: 51%
+        }
+        
+        #africa {
+            top: 72%;
+            left: 53.5%
+        }
+        
+        #usa {
+            top: 43%;
+            left: 19.5%
+        }
+        
+        #colombia {
+            top: 59.5%;
+            left: 27.5%
+        }
+        
+        #logo {
+            position: relative;
+            max-width: inherit;
+            max-height: 90%;
+            align-self: center;
+        }
+        
+        .checkmark {
+            list-style-position: inside;
+        }
+        
+        .checkmark li {
+            list-style-type: '✓ ';
+        }
+        
+        .checkmark li::marker {
+            color: #57B1DE;
+            font-weight: bold;
+        }
+        
+        li.warning {
+            list-style-type: "⚠ ";
+        }
+        
+        li.warning::marker {
+            color: #b31240;
+            font-weight: bold;
+        }
+        /*
+        @media only screen and (max-device-width: 900px) {
+            #login-error-msg-holder {
+                width: 300%;
+                height: 100%;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+            #main-holder {
+                z-index: 1;
+                width: 75%;
+                height: 70%;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 7px;
+                box-shadow: 0px 0px 5px 2px black;
+            }
+        }
+        
+        @media only screen and (max-device-width: 800px) {
+            html {
+                overflow: hidden;
+                position: fixed;
+            }
+        }
+        
+        @media only screen and (max-device-height: 500px) {
+            #main-holder {
+                margin-top: 10%;
+                margin-bottom: 10%;
+                z-index: 1;
+                width: 75%;
+                height: 95%;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 7px;
+                box-shadow: 0px 0px 5px 2px black;
+            }
+        }
+        
+        @media only screen and (max-device-height: 400px) {
+            #main-holder {
+                margin-top: 0;
+                margin-bottom: 0;
+                z-index: 1;
+                width: 75%;
+                height: 97.5%;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 7px;
+                box-shadow: 0px 0px 5px 2px black;
+            }
+        }*/
+        
+        @media only screen and (max-width: 950px) {
+            #newZealand {
+                transform: translate(-85%, -50%);
+            }
+            #japan {
+                transform: translate(-77.5%, -50%);
+            }
+            #italy {
+                top: 40%;
+                left: 51%;
+                transform: translate(-50.5%, -50%);
+            }
+            #africa {
+                top: 65%;
+                left: 55.5%;
+                transform: translate(-52.5%, -49%);
+            }
+            #usa {
+                top: 37%;
+                left: 19%;
+                transform: translate(-25%, -50%);
+            }
+            #colombia {
+                top: 62.5%;
+                left: 31%;
+                transform: translate(-35%, -50%);
+            }
+        }

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#main-holder {
+    z-index: 1;
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+#login-error-msg-holder {
+    width: 250%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+#login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+
+#error-msg-second-line {
+    display: block;
+}
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-form-field::placeholder {
+    color: #3a3a3a;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
+
+.col-rt-12 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.head_image {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow: hidden;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    #main-holder {
+        z-index: 1;
+        width: 75%;
+        height: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 2px black;
+        padding: 0.75em;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    #login-header,
+    #login-form {
+        margin: auto;
+    }
+    .rt-container {
+        height: 50%;
+        width: 50%;
+    }
+}
